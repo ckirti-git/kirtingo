@@ -1,0 +1,144 @@
+/* ========== General ========== */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #fffaf3;
+  color: #111;
+}
+
+/* ========== Hero Section ========== */
+.social-hero {
+  position: relative;
+  background: url('Images/img9.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.social-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffcc00;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  margin-top: 10px;
+}
+
+/* ========== Information Section ========== */
+.social-info h2 {
+  color: #e63946;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.social-info p {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.social-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-info li {
+  margin: 8px 0;
+  font-weight: 500;
+  color: #000;
+}
+
+.social-info li::before {
+  content: "• ";
+  color: #ffcc00;
+  font-size: 1.2rem;
+}
+
+.info-img {
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ========== Gallery Section ========== */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #fff3e0;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+
+.card-body {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  color: white;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+/* ========== Go Home Button ========== */
+.go-home-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffcc00, #e63946);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+}
+
+.go-home-btn:hover {
+  background: linear-gradient(135deg, #e63946, #ffcc00);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.4);
+}

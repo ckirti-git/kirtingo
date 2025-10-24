@@ -1,0 +1,88 @@
+/* ---------- General Styles ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: larger;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background: url('Images/img19.jpg') center/cover no-repeat;
+  height: 70vh;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #ffcc00;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* ---------- About Section ---------- */
+.about h2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ---------- Vision Section ---------- */
+.vision {
+  background-color: #fff;
+}
+
+.vision h2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.vision p {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Go Home Button ---------- */
+.go-home-btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.go-home-btn:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}

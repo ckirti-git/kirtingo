@@ -1,0 +1,155 @@
+/* ---------- Hero Section ---------- */
+body{
+  font-family: 'Merriweather', serif;
+  font-size: larger;
+}
+
+.awareness-hero {
+  height: 50vh;
+  background: linear-gradient(135deg, #fffbe0, #ffe1e1);
+  color: #111;
+  position: relative;
+  overflow: hidden;
+} 
+
+.awareness-hero .hero-text {
+  z-index: 2;
+  max-width: 750px;
+  padding: 20px;
+}
+
+.awareness-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.awareness-hero h1 span {
+  color: #d62828;
+}
+
+.awareness-hero p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* ---------- Floating Shapes ---------- */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: float 8s infinite ease-in-out;
+}
+
+.shape1 {
+  width: 150px; height: 150px;
+  background: #f77f00;
+  top: 10%; left: 10%;
+  animation-delay: 0s;
+}
+
+.shape2 {
+  width: 200px; height: 200px;
+  background: #d62828;
+  bottom: 15%; right: 15%;
+  animation-delay: 2s;
+}
+
+.shape3 {
+  width: 100px; height: 100px;
+  background: #fcbf49;
+  top: 50%; right: 25%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-30px) rotate(20deg); }
+}
+
+/* ---------- Info Section ---------- */
+.awareness-info h2 {
+  color: #d62828;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.awareness-info p {
+  color: #444;
+  line-height: 1.7;
+}
+
+.awareness-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.awareness-info li {
+  font-size: 1.05rem;
+  padding: 6px 0;
+}
+
+/* ---------- Highlight Section ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+
+.card-body {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  color: white;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+ 
+/* ---------- Go Home Button ---------- */
+.go-home-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #d62828, #fcbf49);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.go-home-btn:hover {
+  background: linear-gradient(135deg, #b81f1f, #f59f00);
+  transform: translateY(-2px);
+  color: #fff;
+}

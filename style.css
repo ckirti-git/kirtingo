@@ -1,0 +1,501 @@
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-brand img {
+  width: 140px;
+  height: 140px;
+}
+
+/*------------------START------------------------*/
+
+/* Make navbar transparent and float above carousel */
+    
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  z-index: 100;
+  font-family: 'Merriweather', serif;
+  
+}
+    
+
+/* Increase logo size */
+    .navbar-brand img {
+      width: 130px;
+      height: 130px;
+    }
+
+    /* Optional: remove margin from body to make carousel start at top */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Optional overlay effect for better visibility of logo/text */
+    .navbar-brand {
+      color: #FCFFCC;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(250, 250, 250, 0.7);
+    }
+
+    .carousel-item img {
+      height: 98vh; /* Full screen carousel */
+      object-fit: cover;
+    }
+
+/* Navigation Links Styling */
+.navbar-nav .nav-link {
+  color: #FCFFCC;
+  font-size: larger;
+  font-weight: 650;
+  margin-left: 25px;
+  transition: all 0.3s ease;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1; /* tighter spacing */
+}
+
+/* Add space from right edge of navbar */
+.navbar .container-fluid {
+  padding-right: 70px; /* adjust as needed (e.g., 50px for more space) */
+} 
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #AC0C0C; /* gold-ish modern tone */
+  transform: scale(1.1);
+}
+
+/* Active link color (optional) */
+.navbar-nav .nav-link.active {
+  color: #AC0C0C;
+}
+
+
+/* -------------- Contact button --------------------- */
+/* Contact Us Button Style */
+.contact-btn {
+  border: 1px solid #FCFFCC;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;   /* ⬅️ increased padding for better spacing */
+  border-radius: 0;    /* flat edges */
+  color: #FCFFCC;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+  
+}
+
+/* Hover Effect */
+.contact-btn:hover {
+  background-color: #FCFFCC;
+  color: black;
+  border-color: #FCFFCC;
+  transform: scale(1.05);
+}
+
+
+
+
+/* ===== Statement Section ===== */
+.statement-section {
+  background-color: #FCFFCC; /* beige background (use #ffffff for white) */
+  color: #000; /* default text color black */
+  padding: 60px 0; /* top & bottom spacing */
+  text-align: center;
+}
+
+.statement-section h2 {
+  font-weight: 700;
+  color: #d32f2f; /* red tone */
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+.statement-section p {
+  font-size: 1.2rem;
+  color: #222; /* dark gray/black text */
+  max-width: 800px;
+  margin: 0 auto; /* centers the text block */
+  line-height: 1.6;
+}
+
+
+/* ------------ cards --------------- */
+/* ====== Title & Paragraph Section ====== */
+.content-section {
+  background-color:#FCFFCC; /* soft pale yellow background */
+  padding: 80px 0;
+}
+
+.section-heading {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #ac0c0c; /* deep red tone */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  line-height: 1.7;
+}
+
+
+/* ====== Image Cards Style ====== */
+
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* No zoom on hover */
+.image-card:hover img {
+  transform: none;
+}
+
+/* Overlay positioning */
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Title link */
+.overlay .card-title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+
+/* Circle button */
+.circle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Circle button hover effect only */
+.circle-btn:hover {
+  background-color: #ffcc00;
+  color: white;
+  transform: scale(1.2) rotate(15deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Remove gaps between cards */
+.row.g-0 > [class*='col-'] {
+  padding: 0;
+}
+
+
+
+/* ====== KEY THEMES Section ====== */
+.key-themes {
+  background-color: #FCFFCC;
+  
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #d32f2f;
+  font-family: 'Merriweather', serif;
+}
+
+/* Card container */
+.theme-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 380px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Background image */
+.theme-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay text */
+.theme-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 38, 38, 0.4);
+  color: #fff;
+  text-align: left;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background 0.3s ease;
+}
+
+.theme-overlay h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.theme-overlay p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Know More link */
+.know-more {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.know-more:hover {
+  color: #ffd700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .theme-card {
+    height: 320px;
+  }
+}
+
+/* ====== Footer Styling ====== */
+
+.footer-section {
+  background-color: #1a1a1a; /* deep charcoal for contrast */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle glowing gradient strip */
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #AC0C0C, #FFD700, #AC0C0C);
+}
+
+
+/* Footer titles & logo */
+.footer-title {
+  color: #FFD700;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFD700;
+  letter-spacing: 2px;
+}
+
+/* Footer text */
+.footer-about {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+/* Links */
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFD700;
+  transform: translateX(5px);
+}
+
+/* Contact info */
+.footer-contact li {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.footer-contact i {
+  color: #FFD700;
+  margin-right: 8px;
+}
+
+/* Social media icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #FFD700;
+  color: #1a1a1a;
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Bottom bar */
+.footer-bottom {
+  background-color: #111;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-links, .footer-contact {
+    text-align: center;
+  }
+  .social-icons {
+    text-align: center;
+  }
+}
+
+
+/* ----------- VISION Section Styling ----------- */
+.ux-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+ 
+  background-color: #FCFFCC;
+  overflow: hidden;
+}
+
+/* ---------- Left Text ---------- */
+.ux-text {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.ux-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a30000; /* strong red tone */
+}
+
+.ux-text span {
+  color: #f8c400; /* yellow accent */
+}
+
+.ux-text p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+/* ---------- Right Image ---------- */
+.ux-image {
+  flex: 1;
+  position: relative;
+  max-width: 550px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ux-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 1.2s ease-in-out;
+}
+
+.ux-image img.active {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+  .ux-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .ux-text {
+    padding-right: 0;
+  }
+
+  .ux-image {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+}

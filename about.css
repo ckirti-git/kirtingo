@@ -1,0 +1,146 @@
+/* -------- General Styling -------- */
+p{
+  font-family: 'Poppins', serif;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #333;
+  background-color: #fffdf6;
+  font-size: larger;
+}
+
+
+
+/* -------- Section -------- */
+.about-section {
+  padding: 80px 0;
+  background: #FCFFCC; /* light yellow theme */
+}
+
+/* -------- Header -------- */
+.section-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #a30000;
+}
+
+.section-header span {
+  color: #f6b800; /* yellow accent */
+}
+
+.section-header p {
+  color: #555;
+  margin-top: 10px;
+}
+
+/* -------- Text Column -------- */
+.about-section h3 {
+  color: #a30000;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.about-list li {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+/* -------- Image Column -------- */
+.about-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.overlay-img {
+  position: absolute;
+  width: 60%;
+  border-radius: 15px;
+  right: -30px;
+  bottom: -30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  animation: floatImg 5s ease-in-out infinite alternate;
+}
+
+/* Floating image animation */
+@keyframes floatImg {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-10px); }
+}
+
+/* -------- Mission & Vision -------- */
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.info-card:hover {
+  transform: translateY(-8px);
+}
+
+.info-card h4 {
+  color: #a30000;
+  margin-bottom: 15px;
+}
+
+/* -------- Team Section -------- */
+.team-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.team-card h5 {
+  font-weight: 600;
+  color: #a30000;
+}
+
+.team-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 992px) {
+  .overlay-img {
+    display: none;
+  }
+}

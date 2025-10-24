@@ -1,0 +1,146 @@
+/* -------- General -------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fffef8;
+  font-family: 'Merriweather', serif;
+}
+
+/* -------- Hero Section -------- */
+.education-hero {
+  background: url("Images/img6.jpg") center/cover no-repeat;
+  position: relative;
+  height: 90vh; /* adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: larger;
+  font-style: 900;
+  text-align: center;
+}
+
+/* Optional overlay to darken image for better readability */
+.education-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* adjust transparency */
+}
+
+/* Keep text on top of overlay */
+.education-hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* -------- Info Section -------- */
+.education-info {
+  background-color: #FCFFCC;
+}
+
+.education-info h2 {
+  font-weight: 700;
+  color: #a30000;
+  margin-bottom: 20px;
+}
+
+.education-info p {
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.education-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.education-info ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.info-img {
+  width: 95%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.info-img:hover {
+  transform: scale(1.03);
+}
+
+/* Galary */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+
+.card-body {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  color: white;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-text { 
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+
+/* ---------- Go to Home Button ---------- */
+.go-home {
+  background: transparent;
+}
+
+.go-home-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
+}
+
+.go-home-btn:hover {
+  background: linear-gradient(135deg, #0056d2, #0099cc);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  color: #fff;
+}
