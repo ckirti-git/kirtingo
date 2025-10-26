@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
   } else {
     // Show them again when scrolled back to top
     navItems.style.opacity = '1';
-    navItems.style.pointerEvents = 'auto';
+    navItems.style.pointerEvents = 'auto'; 
     contactBtn.style.opacity = '1';
     contactBtn.style.pointerEvents = 'auto';
   }
