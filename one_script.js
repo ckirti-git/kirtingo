@@ -30,3 +30,20 @@ window.addEventListener('scroll', function() {
         images[index].classList.add('active');
       }, 3000); // change every 3 seconds
     });
+
+// Achievements
+    // Scroll animation for fade-up elements
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll(".fade-up");
+
+  const appearOnScroll = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
